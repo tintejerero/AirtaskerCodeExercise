@@ -1,6 +1,5 @@
 package com.example.airtaskercodetest.adapter;
 
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,8 +24,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedItemViewHo
         mDisplayFeedItemList = displayFeedItemList;
     }
 
+    @SuppressWarnings("WeakerAccess")
     public class FeedItemViewHolder extends RecyclerView.ViewHolder{
-        ConstraintLayout mConstraintLayout;
         ImageView mAvatarImageView;
         TextView mDescriptionTextView;
         TextView mDateTextView;
@@ -34,7 +33,6 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedItemViewHo
 
         FeedItemViewHolder(View itemView) {
             super(itemView);
-            mConstraintLayout = itemView.findViewById(R.id.feed_item_constraint_layout);
             mAvatarImageView = itemView.findViewById(R.id.feed_item_avatar_image_view);
             mDescriptionTextView = itemView.findViewById(R.id.feed_item_description_text_view);
             mDateTextView = itemView.findViewById(R.id.feed_item_date_text_view);
