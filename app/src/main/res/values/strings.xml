@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CodeTest</string>
+    <string name="feed_item_image_view_description">Event feed avatar</string>
+</resources>
